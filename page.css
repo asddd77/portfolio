@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* 個別ページ */
+
+.pager {
+    margin-top: 50px;
+    margin-bottom: 50px;   
+}
+.pager ul {
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+}
+.pager li {
+    text-align: center;
+    width: 50%; 
+}
+
+.big_img {
+    width: 50%;
+    margin: 0 auto;
+}
+.big_img_yoko {
+    text-align: center;
+}
+.kisode_big {
+    width: 40%;
+    margin: 0 auto;
+}
+.kisode_big img {
+    width: 100%;
+}
+.live2d_big {
+    display: flex;
+    justify-content: space-evenly;
+}
+.live2d_big img {
+    width: 30%;
+}
+.space {
+    margin-top: 80px;
+    font-size: 13pt;
+}
+
+.kiji {
+    width: 100%;
+}
+
+.main_img {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+.main_img img {
+    margin: 100px 0;
+    width: 60%;
+    vertical-align: middle;
+}
+.img_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.img_wrap img {
+    width: 45%;
+    margin: 10px auto;
+}
+.big_img_yoko img {
+    width: 80%;
+    margin: 10px 0;
+}
+
+.live2d_img {
+    text-align: center;
+}
+.live2d_img img {
+    max-width: 100%;
+}
+h4 {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    figcaption {
+        font-size: 10pt;
+        line-height: 30px;
+    }
+    .main_img img {
+        margin: 50px 0;
+    }
+}
+  

@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	background-color: #d6ff4b;
+}
+/* a {
+	text-decoration: none;
+	display: block;
+	font-weight: bold;
+	color: #3f51b5;
+} */
+.cursor {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 25px;
+	height: 25px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	transition: 0.2s;
+	transition-timing-function: ease-out;
+	pointer-events: none;
+	z-index: 10;
+}
+.center {
+    text-align: center;
+}
+.border {
+	border: dotted 3px black ;
+}
+.midasi {
+	padding: 20px 0;
+	margin: 50px auto;
+	font-style: italic;
+	font-weight: bold;
+}
+
+header {
+	line-height: 50px;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+}
+.back_img {
+	background-image: url();
+	opacity: 0.5;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	vertical-align: middle;
+}
+
+.head_text {
+	z-index: 3;
+}
+.banner {
+	text-align: center;
+	background-color: #1e1210;
+	color: #d6ff4b;
+	font-weight: bold;
+	line-height: 150px;
+	font-size: 20pt;
+}
+.head {
+	margin: 0 auto;
+}
+.head ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+.head li {
+	text-align: center;
+	list-style: none;
+	width: 50%;
+}
+.head li a {
+	color: #1e1210;
+}
+.head li:hover {
+	background-color: #3f51b5;
+	transition: 0.5s all;
+}
+.head li:hover a {
+	color: #d6ff4b;
+}
+
+.nav {
+	line-height: 50px;
+	margin: 0 auto;
+	width: 50%;
+	padding: 30px;
+}
+.nav ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+.nav li {
+	text-align: center;
+	list-style: none;
+	width: 50%;
+}
+.nav li a {
+	color: #1e1210;
+}
+.nav li:hover {
+	background-color: #3f51b5;
+	transition: 0.5s all;
+}
+.nav li:hover a {
+	color: #d6ff4b;
+}
+
+
+.home_btn a, .about_btn a, .contents_btn a, .contact_btn a, .btn a, .midasi_p a, .pager a {
+	text-decoration: none;
+	display: block;
+	font-weight: bold;
+	color: #3f51b5;
+}
+
+
+main {
+	width: 80vw;
+	margin: 0 auto;
+}
+h1 {
+	background-color: black;
+	color: white;
+	padding: 30px;
+}
+
+footer {
+	text-align: center;
+	margin: 150px 0;
+}
+small {
+	text-align: center;
+}
+
+.on {
+	display: block;
+}
+.off {
+	display: none;
+}
+
+.logo {
+	display: block;
+	text-align: center;
+}
+.st0 {
+	fill:none;
+	stroke:#3f51b5;
+	stroke-width:5;
+	stroke-miterlimit:10;
+}
+.logo_a {
+	width: 50px;
+	margin: 10px auto;
+}
+
+
+/*ハンバーガー*/
+.hum {
+	display: none;
+}
+.hum_nav {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #d6ff4b;
+	z-index: 2;
+	display: none;
+}
+.hum_nav ul {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 100px;
+	padding: 0;
+}
+.hum_nav li {
+	list-style: none;
+	font-size: 20pt;
+	font-weight: bold;
+}
+.hum_btn{
+	position: fixed;
+	cursor: pointer;
+	width: 60px;
+	height:60px;
+	top: 10px;
+	right: 10px;
+	border-radius: 5px;
+	z-index: 999;
+}
+.hum_btn span{
+	display: inline-block;
+	transition: all .4s;
+	position: absolute;
+	left: 14px;
+	height: 3px;
+	border-radius: 2px;
+	background: rgb(255, 0, 0);
+}
+
+
+.hum_btn span:nth-of-type(1) {
+	top:15px; 
+	width: 45%;
+}
+
+.hum_btn span:nth-of-type(2) {
+	top:23px;
+	width: 35%;
+}
+
+.hum_btn span:nth-of-type(3) {
+	top:31px;
+	width: 20%;
+}
+
+.hum_btn.active span:nth-of-type(1) {
+	top: 18px;
+	left: 18px;
+	transform: translateY(6px) rotate(-135deg);
+	width: 30%;
+}
+
+.hum_btn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.hum_btn.active span:nth-of-type(3){
+	top: 30px;
+	left: 18px;
+	transform: translateY(-6px) rotate(135deg);
+	width: 30%;
+}
+
+
+/* loading animation */
+
+.load_anime {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  	top: 0;
+  	left: 0;
+  	z-index: 9999;
+}
+.load_anime svg {
+    width: 150px;
+    position: absolute;          /* 位置指定 */
+    top: 50%;                    /* 親要素の半分下にずらす */
+    left: 50%;                   /* 親要素の半分右にずらす */
+    transform: translateY(-50%) translateX(-50%);    /* 要素自体の半分、上と左にずらす */
+    padding: 20px; 
+}
+.load_anime svg path {
+    fill:none;
+    stroke-width:5px;
+    stroke:#bf0;
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    animation: logoanime 3s both infinite;
+}
+@keyframes logoanime {
+    0% {
+        stroke-dashoffset: 1000px;
+    }
+    50% {
+        stroke-dashoffset: 0px;
+    }
+    100% {
+        stroke-dashoffset: 1000px;
+    }
+}
+.loaded {
+	animation: load_opa forwards 1s;
+}
+
+@keyframes load_opa {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.cursor {
+		visibility: hidden;
+	}
+	.nav li {
+		margin: 15px;
+	}
+	.hum {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+	main {
+		width: 95vw;
+	}
+}

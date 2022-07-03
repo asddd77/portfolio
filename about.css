@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.profile h3 {
+    text-align: center;
+}
+
+.profile p {
+    text-align: center;
+    line-height: 45px;
+}
+.licence {
+    line-height: 30px;
+}
+.licence ul {
+    text-align: center;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    border-top: 5px #673ab7 dotted;
+    padding: 30px;
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+.ma {
+    margin-top: 150px;
+}
+.about {
+    margin: 0 auto;
+    background-color: #d6ff4b;
+}
+.deki_ti {
+    padding: 20px;
+    border: 3px solid #673ab7;
+    width: 200px;
+    text-align: center;
+    margin: 10px auto;
+    color: #673ab7;
+}
+.deki_con {
+    position: relative;
+    margin: 100px 50px;
+    display: flow-root;
+    text-align: center;
+}
+.deki_con p {
+    text-align: center;
+}
+.deki_con figucaption {
+    line-height: 50px;
+    font-size: 15pt;
+
+}
+
+.deki_con_2 {
+    position: relative;
+    margin: 100px 50px;
+    display: flow-root;
+}
+.deki_con_2 p {
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+.syu {
+    margin: 0 auto; 
+}
+p {
+    line-height: 50px;
+    font-size: 15pt;
+}
+
+@media screen and (max-width: 1024px) {
+    .deki_con {
+        display: flex;
+        flex-direction: column;
+        position: unset;
+    }
+    .deki_con figucaption {
+        position: unset;
+        margin-bottom: 20px;
+        line-height: 38px;
+        text-align: center;
+        width: 100%;
+    }
+    .deki_con img {
+        position: unset;
+        width: 100%;
+    }
+    .profile p {
+		font-size: 16px;
+        line-height: 35px;
+	}
+    p {
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
